@@ -26,7 +26,8 @@ Organizacija u modelu prestavlja univerzitet odnosno samog organizatora ovog dog
 
 Klasa Duration prestavlja vremenski period trajanja samog kursa.
 Mapiranje odgovarajucih elemenata  u odgovarajuće elemente RDF vokabulara LRMI Grafički prikaz
-![m](https://cloud.githubusercontent.com/assets/6192416/4297826/c873924e-3e14-11e4-9846-0930c728b862.jpg)
+![sl 2](https://cloud.githubusercontent.com/assets/6192416/4322283/394acfc2-3f47-11e4-94c6-4d1a48849742.jpg)
+
 
 
 
