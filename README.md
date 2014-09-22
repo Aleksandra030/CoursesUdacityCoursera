@@ -14,7 +14,8 @@ Radi kreiranja aplikacije potrebno je bilo ispuniti sledeće zahteve:
 Sačuvane RDF podatke potrebno je učiniti dostupnim korisnicima. Implementacija REST servisa koji će biti dostupan na Web-u predstavlja rešenje koje korisnicima pruža API sa dostupnim operacijama za pristup tim podacima. Pristupajući različitim URL-ovima koje nudi REST API, korisnik šalje upite i dobija željene podatke u JSON formatu. 
 #2.	Domenski model
 
-![sl1 domen](https://cloud.githubusercontent.com/assets/6192416/4322225/c82c4456-3f46-11e4-8d2f-e412985b7331.jpg)
+![slika nova 1](https://cloud.githubusercontent.com/assets/6192416/4350835/9bd8cd78-41fa-11e4-8704-7cea3e831c65.jpg)
+
 
 Slika 1 Domen
 
@@ -26,7 +27,8 @@ Organizacija u modelu prestavlja univerzitet odnosno samog organizatora ovog dog
 
 Klasa Duration prestavlja vremenski period trajanja samog kursa.
 Mapiranje odgovarajucih elemenata  u odgovarajuće elemente RDF vokabulara LRMI Grafički prikaz
-![sl 2](https://cloud.githubusercontent.com/assets/6192416/4322283/394acfc2-3f47-11e4-94c6-4d1a48849742.jpg)
+![slika nova 2](https://cloud.githubusercontent.com/assets/6192416/4350837/c2843dd6-41fa-11e4-8782-eb7db609ed64.jpg)
+
 
 
 
@@ -151,7 +153,17 @@ REST servisi su u ovom projektu implementirani preko Jersey  biblioteke. Jersey 
 
 Gson  biblioteka konvertuje Java objekte u njihovu JSON reprezentaciju. Biblioteka za programski jezik Java koja se bavi serijalizacijom i deserijalizacijom Java objekata u JSON objekte. Takođe može da konstruiše Java objekat iz JSON stringa. 
 
+#5. Korisničko upustvo
 
+Pretraživanje kurseva se vrši prema četiri kriterijuma. Na sledećoj slici je prikazana forma za pretraživanje, odnosno početna strana.
+![untitled](https://cloud.githubusercontent.com/assets/6192416/4350895/c14ddaf6-41fc-11e4-9d52-d10b314b93e6.png)
+
+TypicalAgeRange, Duration i Language prestavljaju padajuće liste, koje u sebi sadrže sve moguće vrednosti datog kriterijuma. Pri učitavanju strane od REST servisa traže se vrednosti iz RDF repozitorijuma. Početna i podrazumevana vrednost sve tri liste je any, koja označava da se ne vrši filtriranje po datom kriterijumu.
+
+Nakon pretrage korisniku se prikazuju kursevi u formi koja je prikazana na slici.
+![ut2](https://cloud.githubusercontent.com/assets/6192416/4350940/2f1f00f4-41fe-11e4-9b3e-b1d0b1d9e1f9.png)
+
+Na početku se nalaze osnovni podaci o kursu, o kom sajtu je reč, sam naziv,jezik kursa i strana kursa. Nakon opisa samog kursa nalazi se i njegovo trajanje, organizator (publisher), sami predavaci (authors) i podaci o sesijama ukoliko ih sam kurs poseduje.
 
 
 
